@@ -6,7 +6,7 @@ import com.anuujj.SpringBootStarter.entity.Department;
 
 public interface DepartmentService {
 
-    public Department saveDepartment(Department dept);
+    public long saveDepartment(Department dept);
 
     public List<Department> getDepartments();
 

@@ -14,8 +14,8 @@ public class DepartmentServiceImpl implements DepartmentService{
     @Autowired
     private DepartmentRepository deptRepo;
     @Override
-    public Department saveDepartment(Department dept) {
-        return deptRepo.save(dept);
+    public long saveDepartment(Department dept) {
+        return deptRepo.save(dept).getDepartmentId();
     }
     @Override
     public List<Department> getDepartments() {

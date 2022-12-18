@@ -2,14 +2,11 @@ package com.anuujj.SpringBootStarter.entity;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Document(collection = "Department")
 public class Department {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long departmentId;
     private String departmentName;
     private String departmentAddress;
