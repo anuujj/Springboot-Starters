@@ -17,7 +17,7 @@ public class DepartmentController {
     @Autowired
     private DepartmentService deptService; 
     @PostMapping("addDepartment")
-    public Department saveDepartment(@RequestBody Department dept){
+    public long saveDepartment(@RequestBody Department dept){
         return deptService.saveDepartment(dept);
     }
     @GetMapping("departments")
